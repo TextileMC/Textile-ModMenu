@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "modmenu",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "ModMenu",
+  "description": "The classic has returned (been brought back) to Infdev",
   "authors": [
-    "Me!"
+    "TextileMC, PheonixVX"
   ],
   "contact": {
-    "issues": "https://github.com/TextileMC/Textile-Example-Mod/issues",
-    "sources": "https://github.com/TextileMC/Textile-Example-Mod"
+    "issues": "https://github.com/minecraft-cursed-legacy/Example-Mod/issues",
+    "sources": "https://github.com/minecraft-cursed-legacy/Example-Mod"
   },
 
   "license": "CC0-1.0",
@@ -18,16 +18,17 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.textilemc.examplemod.ExampleMod"
+    "init": [
+      "org.github.TextileMC.ModMenu.ModMenu"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "modmenu.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": "*"
+    "fabricloader": "*",
+    "minecraft": "0.31.20100618"
   },
   "suggests": {
     "flamingo": "*"

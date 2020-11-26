@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "org.github.TextileMC.ModMenu.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "GUIMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
